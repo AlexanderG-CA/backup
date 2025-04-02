@@ -1,20 +1,51 @@
 stages:
+  - build
   - test
-
-variables:
-  IMAGE_TAG: latest
-# ---Frontend test---
+  - dockerize
+  - deploy
+frontend:
+  stage: build
+  image: node:18
+  before_script:
+    - cd frontend
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - frontend/build
+  only:
+    - main
 frontend_test:
   stage: test
-  image: node:18-alpine
-  script:
+  image: node:18
+  before_script:
     - cd frontend
+  script:
     - npm install
-    - npm test -- --watchAll=false
+    - npm test
+  only:
+    - main
+
+backend:
+  stage: build
+  image: mcr.microsoft.com/dotnet/sdk:8.0
+  before_script:
+    - cd backend
+  script:
+    - dotnet restore
+    - dotnet build --configuration Release
+  artifacts:
+    paths:
+      - backend/bin/Release
+  only:
+    - main
 backend_test:
   stage: test
   image: mcr.microsoft.com/dotnet/sdk:7.0
-  script:
+  before_script:
     - cd backend
-    - dotnet restore ./project.csproj
-    - dotnet test ./project.csproj
+  script:
+    - dotnet test --configuration Release
+  only:
+    - main
