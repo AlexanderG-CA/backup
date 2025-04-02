@@ -3,16 +3,17 @@ stages:
 
 variables:
   IMAGE_TAG: latest
-
+  
 frontend_test:
   stage: test
+  image: node:18-alpine
   script:
     - cd frontend
     - npm install
     - npm test -- --watchAll=false
-
 backend_test:
   stage: test
+  image: mcr.microsoft.com/dotnet/sdk:7.0
   script:
     - cd backend
     - dotnet restore
