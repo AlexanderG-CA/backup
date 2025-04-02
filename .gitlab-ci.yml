@@ -3,7 +3,7 @@ stages:
 
 variables:
   IMAGE_TAG: latest
-  
+--Frontend test---
 frontend_test:
   stage: test
   image: node:18-alpine
