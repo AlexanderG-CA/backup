@@ -1,0 +1,19 @@
+stages:
+  - test
+
+variables:
+  IMAGE_TAG: latest
+
+frontend_test:
+  stage: test
+  script:
+    - cd frontend
+    - npm install
+    - npm test -- --watchAll=false
+
+backend_test:
+  stage: test
+  script:
+    - cd backend
+    - dotnet restore
+    - dotnet test
