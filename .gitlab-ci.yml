@@ -3,6 +3,8 @@ stages:
   - test
   - dockerize
   - deploy
+  - update-jira
+# --Frontend--
 frontend:
   stage: build
   image: node:18
@@ -16,6 +18,7 @@ frontend:
       - frontend/build
   only:
     - main
+# --Frontend_test
 frontend_test:
   stage: test
   image: node:18
@@ -26,7 +29,7 @@ frontend_test:
     - npm test
   only:
     - main
-
+# Backend
 backend:
   stage: build
   image: mcr.microsoft.com/dotnet/sdk:8.0
@@ -40,6 +43,7 @@ backend:
       - backend/bin/Release
   only:
     - main
+    #backend_test
 backend_test:
   stage: test
   image: mcr.microsoft.com/dotnet/sdk:8.0
@@ -49,3 +53,21 @@ backend_test:
     - dotnet test --configuration Release
   only:
     - main
+# Jira-integration
+jira-update:
+  image: curlimages/curl:latest
+  stage: update-jira
+  script:
+    - echo "Updating the Jira Issue"
+    - export JIRA_ISSUE_KEY=$(git log -1 --pretty=format:"%s" | grep -oE "${JIRA_PROJECT_KEY}-[0-9]+")
+    - if [ -n "$JIRA_ISSUE_KEY" ]; then
+    - |
+      curl -u "$JIRA_USER:$JIRA_API_TOKEN" -X PUT "${JIRA_URL}/rest/api/2/issue/$JIRA_ISSUE_KEY" \
+        -H "Content-Type: application/json" \
+        --data '{"fields": {"status": {"name": "Done"}}}';
+    - else
+      echo "No Jira issue key found in the commit message.";
+    - fi
+  only:
+    - main
+
