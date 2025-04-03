@@ -13,5 +13,5 @@ COPY --from=build-env /app/out .
 
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "API.dll"]
+ENTRYPOINT ["dotnet", "cc.14.dll"]
 
