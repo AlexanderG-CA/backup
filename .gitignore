@@ -257,3 +257,29 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# Docker
+docker-compose.override.yml
+docker-compose.debug.yml
+**/docker-compose.*
+.dockerignore
+
+
+# GitLab CI/CD
+.gitlab-ci.yml
+*.log
+
+# Environment Secrets
+.env.*
+.env.local
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+._*
+.Spotlight-V100
+.Trashes
+
