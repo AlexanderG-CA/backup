@@ -55,19 +55,22 @@ backend_test:
     - main
 # Jira-integration
 jira-update:
-  image: curlimages/curl:latest
   stage: update-jira
+  image: curlimages/curl:latest
   script:
     - echo "Updating the Jira Issue"
-    - export JIRA_ISSUE_KEY=$(git log -1 --pretty=format:"%s" | grep -oE "${JIRA_PROJECT_KEY}-[0-9]+")
+    - export JIRA_ISSUE_KEY=$(git log -1 --pretty=format:"%s" | grep -oE "SCRUM-[0-9]+")
     - if [ -n "$JIRA_ISSUE_KEY" ]; then
     - |
-      curl -u "$JIRA_USER:$JIRA_API_TOKEN" -X PUT "${JIRA_URL}/rest/api/2/issue/$JIRA_ISSUE_KEY" \
+      curl -u "$JIRA_USER:$JIRA_API_TOKEN" -X POST "$JIRA_URL/rest/api/2/issue/$JIRA_ISSUE_KEY/transitions" \
         -H "Content-Type: application/json" \
-        --data '{"fields": {"status": {"name": "Done"}}}';
+        --data '{"transition": {"id": "31"}}'
+      echo "Jira issue $JIRA_ISSUE_KEY transitioned to Done."
+      curl -u "$JIRA_USER:$JIRA_API_TOKEN" -X POST "$JIRA_URL/rest/api/2/issue/$JIRA_ISSUE_KEY/comment" \
+        -H "Content-Type: application/json" \
+        --data '{"body": "Automatically updated status to Done via CI/CD."}'
     - else
-      echo "No Jira issue key found in the commit message.";
+      echo "No Jira issue key found in the commit message."
     - fi
   only:
     - main
-
