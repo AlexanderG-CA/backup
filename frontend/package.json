@@ -39,7 +39,7 @@
     "moduleNameMapper": {
       "\\.(css|scss)$": "identity-obj-proxy"
     },
-    "extensionsToTreatAsEsm": [".ts", ".tsx", ".js", ".jsx"]
+    "extensionsToTreatAsEsm": [".ts", ".tsx"]
   }
 }
 
