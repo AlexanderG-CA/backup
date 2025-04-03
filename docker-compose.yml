@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   frontend:
     image: registry.chasacademy.dev/chas-challenge-2025/group14/cc.14/frontend:latest
@@ -11,6 +10,8 @@ services:
         condition: on-failure
     networks:
       - cc14-network
+    configs:
+      - source: registry_auth
 
   backend:
     image: registry.chasacademy.dev/chas-challenge-2025/group14/cc.14/backend:latest
@@ -22,7 +23,14 @@ services:
         condition: on-failure
     networks:
       - cc14-network
+    configs:
+      - source: registry_auth
+
+configs:
+  registry_auth:
+    file: /etc/docker/registry-auth.json
 
 networks:
   cc14-network:
     driver: overlay
+
