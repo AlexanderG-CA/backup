@@ -28,7 +28,6 @@ services:
 
 configs:
   registry_auth:
-    file: /etc/docker/registry-auth.json'
     external: true
 
 networks:
