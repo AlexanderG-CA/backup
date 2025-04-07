@@ -34,7 +34,7 @@ dist-ssr
 *.db-wal
 
 # exception for the backend file.
-!backend.sln
+!backend/backend.sln
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
