@@ -29,6 +29,12 @@ dist-ssr
 *.user
 *.userosscache
 *.sln.docstates
+*.db
+*.db-shm
+*.db-wal
+
+# exception for the backend file.
+!backend.sln
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -110,6 +116,9 @@ ipch/
 
 # TFS 2012 Local Workspace
 $tf/
+
+# Guidance Automation Toolkit
+*.gpState
 
 # ReSharper settings and temporary files
 _ReSharper*/
@@ -222,6 +231,14 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
+# Visual Studio LightSwitch build output
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
+_Pvt_Extensions
+
 # Paket dependency manager
 .paket/paket.exe
 
@@ -250,4 +267,3 @@ Desktop.ini
 ._*
 .Spotlight-V100
 .Trashes
-
