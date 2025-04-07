@@ -283,3 +283,12 @@ Desktop.ini
 .Spotlight-V100
 .Trashes
 
+# Visual Studio specific
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.db
+*.db-shm
+*.db-wal
