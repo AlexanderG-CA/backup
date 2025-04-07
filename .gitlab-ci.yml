@@ -1,0 +1,76 @@
+stages:
+  - build
+  - test
+  - dockerize
+  - deploy
+  - update-jira
+# --Frontend--
+frontend:
+  stage: build
+  image: node:18
+  before_script:
+    - cd frontend
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - frontend/build
+  only:
+    - main
+# --Frontend_test
+frontend_test:
+  stage: test
+  image: node:18
+  before_script:
+    - cd frontend
+  script:
+    - npm install
+    - npm test
+  only:
+    - main
+# Backend
+backend:
+  stage: build
+  image: mcr.microsoft.com/dotnet/sdk:8.0
+  before_script:
+    - cd backend
+  script:
+    - dotnet restore
+    - dotnet build --configuration Release
+  artifacts:
+    paths:
+      - backend/bin/Release
+  only:
+    - main
+    #backend_test
+backend_test:
+  stage: test
+  image: mcr.microsoft.com/dotnet/sdk:8.0
+  before_script:
+    - cd backend
+  script:
+    - dotnet test --configuration Release
+  only:
+    - main
+# Jira-integration
+jira-update:
+  stage: update-jira
+  image: curlimages/curl:latest
+  script:
+    - echo "Updating the Jira Issue"
+    - export JIRA_ISSUE_KEY=$(git log -1 --pretty=format:"%s" | grep -oE "SCRUM-[0-9]+")
+    - if [ -n "$JIRA_ISSUE_KEY" ]; then
+    - |
+      curl -u "$JIRA_USER:$JIRA_API_TOKEN" -X POST "$JIRA_URL/rest/api/2/issue/$JIRA_ISSUE_KEY/transitions" \
+        -H "Content-Type: application/json" \
+        --data '{"transition": {"id": "31"}}'
+      echo "Jira issue $JIRA_ISSUE_KEY transitioned to Done."
+      curl -u "$JIRA_USER:$JIRA_API_TOKEN" -X POST "$JIRA_URL/rest/api/2/issue/$JIRA_ISSUE_KEY/comment" \
+        -H "Content-Type: application/json" \
+        --data '{"body": "Automatically updated status to Done via CI/CD."}'
+    - else
+      echo "No Jira issue key found in the commit message."
+    - fi
+  only:
+    - main
