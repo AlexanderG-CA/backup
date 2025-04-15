@@ -1,0 +1,432 @@
+[33mcommit d213cbdbc62530d4121aac80684ab903e56ff124[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Mon Apr 7 09:15:18 2025 +0000
+
+    Revert "fixa gitignore"
+    
+    This reverts commit b6c24db64048f4659712d906e6d0c7b048485453.
+
+[33mcommit b6c24db64048f4659712d906e6d0c7b048485453[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Mon Apr 7 09:12:59 2025 +0000
+
+    fixa gitignore
+
+[33mcommit a88020e0d2223295921dd860e8385b4c5ff63103[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 15:03:39 2025 +0000
+
+    Edit dockerfile
+
+[33mcommit 9357825325d0ca6e4331cf3d2dc771f005364faf[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 14:57:33 2025 +0000
+
+    Edit vite.config.js
+
+[33mcommit 3094d15098bcc20b3d215f35dce0454d7e272019[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 14:54:34 2025 +0000
+
+    Edit vite.config.js
+
+[33mcommit f47efbc33c66e8638f2419b6480b3521ff558301[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 14:36:47 2025 +0000
+
+    Edit package.json
+
+[33mcommit d7f8708dbc7994e5cc2971e339c1dc2160b1ac4e[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 14:31:12 2025 +0000
+
+    Edit package.json
+
+[33mcommit a7a9095cd4ca438db6e9a233c0b4f1fd5b62b7d3[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 14:24:56 2025 +0000
+
+    Edit docker-compose.yml
+
+[33mcommit 4edac787781ecbb3809a1d03cc6e937afafc9277[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 14:08:23 2025 +0000
+
+    Edit dockerfile
+
+[33mcommit ed1374e709c203be5662207182ded60d9170375c[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 14:06:37 2025 +0000
+
+    Edit dockerfile
+
+[33mcommit 04858a2f004f62e4d777b61e9f8806af90346fc9[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 13:59:33 2025 +0000
+
+    Edit docker-compose.yml
+
+[33mcommit c18aa138b2d832f8b0cd15b9f8e775aebea2b3d1[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 13:54:47 2025 +0000
+
+    Edit docker-compose.yml
+
+[33mcommit 10fd63c61b7c6122a12481e958205fec6e681925[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 13:53:08 2025 +0000
+
+    Edit docker-compose.yml
+
+[33mcommit ff9a1f782e381daaf21e5ebdba12cda7eb1a25ae[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 13:46:46 2025 +0000
+
+    Edit docker-compose.yml
+
+[33mcommit bdd95fe20ec77fb36714575d1fcea9e71b9efe49[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 12:23:50 2025 +0000
+
+    Update 2 files
+    
+    - /dockerfile
+    - /backend/dockerfile
+
+[33mcommit 4abe27309ca2b549d47a9f8703710efae03736cf[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 12:15:39 2025 +0000
+
+    Update file dockerfile
+
+[33mcommit b0e6e143d09ff395612df354fa8979e99d89970a[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 12:09:30 2025 +0000
+
+    Edit dockerfile
+
+[33mcommit 08f6b42f778c4b3d4fcdb39a63bfead6dea7d064[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 12:08:08 2025 +0000
+
+    Delete Dockerfile
+
+[33mcommit 7b2c019b22427ca04f70493d655838514ac95f95[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 11:18:07 2025 +0000
+
+    Delete .gitignore
+
+[33mcommit 126834c781b738591c3dbf2fb70761a97540300f[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 11:17:59 2025 +0000
+
+    Delete .gitignore
+
+[33mcommit a222ed216b58c3c8e637a6f9dd93acd1a3135a74[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 11:14:23 2025 +0000
+
+    Edit .gitignore
+
+[33mcommit c6c7c5a03c1ab9a92b865092c05db5396a4c1b3e[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 11:10:44 2025 +0000
+
+    flytta .gitignore
+
+[33mcommit d4e4e47f668c7bfde87910b6efbe7cb6e605d464[m
+Merge: d1ae1bb 20a872d
+Author: Matheus Torrico <matheus.torrico@chasacademy.se>
+Date:   Thu Apr 3 10:48:26 2025 +0000
+
+    Merge branch 'SCRUM-8-som-utvecklare-vill-jag-ha-en-verifierad-pipeline' into 'main'
+    
+    SCRUM-8 commit som dev
+    
+    See merge request chas-challenge-2025/group14/cc.14!2
+
+[33mcommit 20a872d3a0fb4095d2c1a07fb182b2cc916027a0[m
+Author: ikariLain <matheus-torrico@outlook.com>
+Date:   Thu Apr 3 12:46:38 2025 +0200
+
+    SCRUM-8 commit som dev
+
+[33mcommit d1ae1bba38b2b43cec0d3e9e6236650a357fce79[m
+Merge: ccd5564 cead6e7
+Author: Matheus Torrico <matheus.torrico@chasacademy.se>
+Date:   Thu Apr 3 10:41:54 2025 +0000
+
+    Merge branch 'SCRUM-10-testing-the-pipeline' into 'main'
+    
+    merge test
+    
+    See merge request chas-challenge-2025/group14/cc.14!1
+
+[33mcommit cead6e77ed8cb56d61a085aa699370c1d71c3367[m
+Author: ikariLain <matheus-torrico@outlook.com>
+Date:   Thu Apr 3 12:26:03 2025 +0200
+
+    merge test
+
+[33mcommit ccd556417a73a28d7f1c354fdcf30fa89ecfb47e[m
+Author: ikariLain <matheus-torrico@outlook.com>
+Date:   Thu Apr 3 12:19:38 2025 +0200
+
+    SCRUM-10 add comment to index
+
+[33mcommit 131017c2ef904aa5048f65a7fe2f603beefb0863[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 10:14:13 2025 +0000
+
+    Edit .gitignore
+
+[33mcommit c7ac454e5696cc7b9eec90bb7f8c4b3b4dc4abbd[m
+Merge: f70e0d5 8897996
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 10:11:24 2025 +0000
+
+    testtest
+
+[33mcommit f70e0d59e85424be202b1d0ae32d03dcf0a8f0fe[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 10:07:56 2025 +0000
+
+    La til .gitignore
+
+[33mcommit 8897996972c790d963f88c8a759ef721d94efafa[m
+Author: ikariLain <matheus-torrico@outlook.com>
+Date:   Thu Apr 3 12:06:55 2025 +0200
+
+    add .env to gitignore
+
+[33mcommit fae540235ab7b6a85ee9004d5408fc7f00708e7e[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 10:03:43 2025 +0000
+
+    Edit package.json
+
+[33mcommit 33dca763f7cae35fea33d57daad717b41b2ba09c[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 10:01:15 2025 +0000
+
+    Delete jest.config.js
+
+[33mcommit 1d6209e614735467253a6e226a18d50c18e47cae[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:58:15 2025 +0000
+
+    Edit package.json
+
+[33mcommit 13640b78754beffa167f36646a35bea4b6cdb10d[m
+Author: Mattias.Astrom <mattias.astrom@hotmail.com>
+Date:   Thu Apr 3 11:56:13 2025 +0200
+
+    backend
+
+[33mcommit 730d5f1e1b004704502d033a7dd6a03fa768934f[m
+Merge: 16c4ac2 d6e9d36
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:51:15 2025 +0000
+
+    .
+
+[33mcommit 16c4ac245dbd62d87188aa1bd55b3ec0684b49ef[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:47:49 2025 +0000
+
+    Update package.json with Vite and Jest configuration
+
+[33mcommit d6e9d36d9f43804f3146f8bf4ddbe79b99accce5[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:45:05 2025 +0000
+
+    Edit package.json
+
+[33mcommit 91603c09d815b001d06f80d630fad37814c3c349[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:41:48 2025 +0000
+
+    Edit package.json
+
+[33mcommit e00fd8d828b5d14aca11615e812749ff33619789[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:37:17 2025 +0000
+
+    Edit jest.config.js
+
+[33mcommit 59d8dc9c628e08f52804f2f4f66ae3999d5e7950[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:35:03 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit 7998acfd71696de045f35ca3936f6e4dec672e7c[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:28:44 2025 +0000
+
+    SCRUM-1: testtest
+
+[33mcommit 3a2f171ed19e4041e9c043b21c67e2b103b9a525[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:20:41 2025 +0000
+
+    SCRUM-9: Testing Jira integration after update
+
+[33mcommit 8ded908740e5b9b36270f6677e19fe1f6d3cc9bc[m
+Merge: 1ee453d b0e1ace
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Thu Apr 3 09:13:55 2025 +0000
+
+    merge
+
+[33mcommit 1ee453dd36b3eae999ce05770eee97c080c02c80[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 11:14:14 2025 +0000
+
+    SCRUM-2: Testing Jira integration locally
+
+[33mcommit b0e1aceeb298f4549943a3fe5a60c7a1c606df80[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 10:46:45 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit 8e5083f7a0aa9d83e3e20d7ea594a211c9c97eae[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:54:52 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit cd134edf0eead39128496d2be6872c3537cba143[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:53:58 2025 +0000
+
+    fix
+
+[33mcommit 321bae193d61dcfd5e9f8b239238aec16052339e[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:52:21 2025 +0000
+
+    Edit package.json
+
+[33mcommit 8d357a51bdddc272b5b222a488b24cf430bf213d[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:51:08 2025 +0000
+
+    fix
+
+[33mcommit b186208a197a9755bc174c71dfa4c40aed2412db[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:43:39 2025 +0000
+
+    Delete package.json
+
+[33mcommit 93d213b24c39ff762082c7d66a50cddb4b6b2db3[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:43:34 2025 +0000
+
+    Delete package-lock.json
+
+[33mcommit a22384675481cb967a24bc0da163e6578a0fb6f4[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:42:48 2025 +0000
+
+    fix
+
+[33mcommit 77d953ccd86e1035cc63aa00285e3788305bb8d1[m
+Merge: 4e3c96b 7405876
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:41:08 2025 +0000
+
+    merge
+
+[33mcommit 4e3c96b9929fb02213cc24166d7ada678e6f6e86[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:38:37 2025 +0000
+
+    la till test för frontend
+
+[33mcommit 740587607206b7a8cf985cb675d6e0b781a8b7c9[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:35:05 2025 +0000
+
+    Edit package.json
+
+[33mcommit 0a16023b318e77ba09381807e36768be62ae5d4f[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:30:41 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit 1e37ac849d512b44b265b44ca4484f59a7882ed6[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:28:16 2025 +0000
+
+    fixade frontend struktur
+
+[33mcommit 62897f86dd6560007b22864a03a5e3133f9b5f89[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:19:58 2025 +0000
+
+    Add .NET Core Web API solution and project
+
+[33mcommit 961412c225cf91e7faca3fa64536319a1d84e455[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:15:38 2025 +0000
+
+    ändrade struktur
+
+[33mcommit 61a5b32b9f106b800fe180be5be160f60974cf90[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 09:04:48 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit ec0fd73b753bfd3ff691a9dbe3d47eee4dd85c67[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 08:57:38 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit c021ba8abda3fa84ccd7016b592ff50d61d77feb[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 08:54:29 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit e66fa77ba1d8bb53cb447104962add616e4c2d3e[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 08:54:12 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit 60dea5692baeee37e98c0480e16c1c2d1afc7376[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 08:52:03 2025 +0000
+
+    La till basic package.json för react.
+
+[33mcommit 7378d9909e10ba891e145c35af02e1c2e3ef671a[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 08:44:30 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit 46f45586e9d7004bdff96408666d64a4cff25a9a[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 08:41:48 2025 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit b3a3592d8e7a844e4655f0e7778cc0e51eba6851[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 08:40:45 2025 +0000
+
+    Initial commit with basic structure
+
+[33mcommit 50400dd67fccdce06a5148828c3beac71d83b4be[m
+Author: Christopher Hellqvist <christopher.hellqvist@chasacademy.se>
+Date:   Wed Apr 2 08:34:04 2025 +0000
+
+    add README
